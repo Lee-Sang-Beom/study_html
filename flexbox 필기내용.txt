@@ -1,0 +1,97 @@
+flexbox container (큰 박스)에 적용시켜줄 수 있는 속성값
+1. display
+2. flex-direction
+3. flex-wrap
+4. flex-flow
+5. justify-content
+6. align-items
+7. align-content
+
+flexbox item (박스 안의 요소)에 적용되는 속성값
+1. order
+2. flex-grow
+3. flex-shrink
+4. flex
+5. align-self
+
+===============
+
+flexbox의 중심축(main axis)과 반대축(cross axis)에 관한 내용
+
+
+===============
+100vh : 부모 컨테이너에 상관없이 나는 아이템을 보이는 view point에 다 쓰겠다 하면 vh사용
+        배경을 100%쓰겠다는 소리임.
+
+        height:100%면, 다 안채워짐
+
+====== container의 속성값 ======
+
+ display : flex;  // flex로 설정 > 박스들이 인라인처럼 가로로 배열
+ flex-direction : column-reverse; row-reverse; column; row; // 순서변경
+ flex-wrap : nowrap; // 가로폭을 줄여도 한줄로 빼곡함 (기본값)
+             wrap // 가로축이 꽉차면 내려감
+             wrap-reverse // 반대로 wrap
+ flex-flow : column nowrap; > 합친거임
+
+======
+
+중심축을 기준으로 아이템을 배치. > 가로 축을 기준으로 좌우에 대한 정렬을 관장 합니다.
+ justify-content : flex-start; // 아이템을 어떻게 배치? 처음부터 왼쪽으로 오른쪽으로 
+                   flex-end; // 우측정렬
+                   space-around; // 박스 사이에 공백을 줌. 제일 양끝에 있는건 간격 얇음
+                   space-evenly : // 마찬가지로 공백. 간격이 전부 같음
+                   space-between : // 양끝은 아예 공백이없음.
+                   center
+
+                   
+
+반대축을 기준으로 아이템을 배치. (세로 축을 기준으로 정렬을 하게 됩니다.)
+align-items : center; // 반대축의 중심에 아이템들이 배열됨
+              baseline // 반대축을 기준으로 해서 텍스트위치를 균등하게해줌 ex)    2 3 4 >> 1 2 3 4
+                                                                            1
+
+
+flex-start		         컨테이너의 최상단으로 정렬 합니다.
+
+flex-end		         컨테이너의 최하단으로 정렬합니다.
+
+center                         컨테이너의 세로 축의 중앙으로 정렬 합니다.
+
+baseline                      컨테이너의 시작위치에 정렬 합니다.
+
+stretch(default)             컨테이너에 맞게 늘립니다.
+                                                                    
+
+반대축!!!
+align-content : flex-start; // 아이템을 어떻게 배치? 처음부터 끝쪽으로 
+                flex-end; // 반대측정렬
+                space-around; // 박스 사이에 공백을 줌. 제일 양끝에 있는건 간격 얇음
+                space-evenly : // 마찬가지로 공백. 간격이 전부 같음
+                space-between : // 양끝은 아예 공백이없음.
+
+
+여기까지 practice_05_css3
+아래부터는 practice_06_css3
+
+====== item의 속성값 ======
+
+            .item2{
+                
+                order : 1; // 배열의 정확한 순서
+                flex-grow: 2;  // 아이템의 길이 (가로의 넓이가 몇의 비율을 가지는가?)
+                               // 만약 2:1:1이면 2배 1배 1배수
+                flex-shrink : 2 // 너비가 줄어들면 어떻게 작아져야 하나?
+
+                즉, grow와 shrink은 컨테이너의 사이즈가 늘고 줄 때 어떤 비율을 가지는지 정의
+
+                flex-basis auto 50% 30# 등등.. : 아이템들이 공간을 얼마나 차지해야하는지 좀 더 세부적으로 명시
+                                                 늘고 줄때 각 item마다 차지하는 비율표시
+                
+                flex : 2 2 auto >> grow, shrink, basis임
+                
+                align-self : 컨테이너의 여러 아이템 중, 특정 아이템만 배치모습을 좀 바꾸고 싶다? 
+                             center
+            }
+
+            

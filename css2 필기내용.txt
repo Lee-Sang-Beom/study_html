@@ -1,0 +1,36 @@
+div{
+    background-color: red;
+    display : inline-block; // 인라인 블록으로 변경. 만약 inline으로만 쓰면 내용이 비어있을 때, span처럼 출력되지않음.
+                            // inline은 기록된 컨텐츠 단위로 (width,height 개무시), inline-block은 컨텐츠 사이즈 관계없음.
+}
+
+span{
+    background-color: blue;
+    display : block; // div처럼 출력방식을 블록으로 지정. 상자긴 한데 한 줄에 하나로 됨
+}
+
+
+==================================
+
+ .container{
+                background-color: yellow;
+                left : 20px;
+                top :20px;
+                position : static; // 컨테이너 자체를 왼쪽과 위쪽으로부터 20px씩 떨어뜨리고 싶지만 position이 기본으로 static이면 안됨
+
+ }
+
+ .box{
+                background-color: blue;
+                color : white;
+                left : 20px;
+                top : 20px;
+                position: relative; #마찬가지로 컨테이너 내에서 박스위치를 변경하려면 relative
+            }
+
+position 요약
+1. static : 변경불가
+2. relative : 기존 위치에서 상대적 이동
+3. absolute : 내가 담겨있는 가장 가까운 박스를 기준으로 이동
+4. fixed : 상자 안에서 완전 벗어남. 가장 큰 박스인 윈도우를 기준으로 함. 스크롤 시 따라옴
+5. sticky : 원래 자리에 있음. 스크롤 시에도 원래 자리에 있음

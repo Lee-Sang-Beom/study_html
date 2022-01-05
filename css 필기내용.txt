@@ -1,0 +1,67 @@
+중요!!!!
+
+자세한 건 style.css에서 확인할 수 있다!!
+
+selector(선택자)
+ 1. Universal : * (모든 태그를 고름)
+ 2. type : Tag (Tag란 이름을 가진 태그를 모두 고름)
+ 3. id : #id (해당하는 id만 고름) -> ex) #speical
+ 4. class : .class (해당하는 class만 고름)
+ 5. state : :
+ 6. attribute : [] (속성값을 가진 애만) -> ex) : a 태그는 href 태그를 가짐
+
+====
+
+ button:hover {
+     // 마우스를 올리면, 글자 색이 바뀜
+ }
+
+ a[href] 링크를 가진 애들만
+{
+    color : purple;
+}
+
+a[href = "https://bns.plaync.com/"] 해당 링크를 가진 애만
+{
+    color : bisque;
+}
+
+a[href^="google"] google로 시작하는 애들만
+{
+    color : indianred;
+}
+
+a[href$="com"] com으로 끝나는 애들만
+{
+    background-color : blanchedalmond;
+}
+
+
+li#special{  // li 태그 안에 있는 id가 special 태그만
+    color : green;
+}
+
+====
+
+
+.div1{
+    width : 100px;
+    height : 100px;
+    background-color: chartreuse;
+    padding : 30px 20px 30px 40px; 
+    border-width : 4px; >>                    border : 2px dashed red도 가능
+    border-style : solid;
+    border-color:pink;
+    margin : 20px;
+
+}
+
+padding : 컨텐츠 안 공간
+ - padding-top, padding-right ... 다양함
+ - padding : 20px 30px 10px 5px (시계방향으로 top right bottom left)
+             20px 0px (위 아래)
+
+margin : 컨텐츠 밖 공간 
+ - 사용법은 마찬가지
+
+

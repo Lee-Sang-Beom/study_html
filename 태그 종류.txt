@@ -1,0 +1,26 @@
+box : header, footer, nav, aside, main, section, article, div, span, form
+item : a, button, input, label, img, video, audio, map, canvas, table
+
+<p> : 문단을 정의할 때 사용. > Block : 한 칸 아래로 내려감. 또 자체 마진을 보유하여, 줄 사이에 공간이 있음
+
+<b> : 글자를 두껍게 > inline : 한 칸 아래로 내려가지 않음.
+
+<span> : <span>태그는 아주 다방면으로 활용이 가능한 유용한 태그입니다. 
+         주로 <div>와 <p>태그와 함께 웹페이지의 일부분에 스타일을 적용시키기 위해 사용됩니다.
+         span 태그안에 아무런 컨텐츠가 없다면 해당 부분은 아무런 변화가 없지만 span태그 내부에 객체가 들어가면,
+         그 객체의 크기만큼 공간이 할당이 됩니다.
+         <span>태그로 요소를 감싸면 CSS나 Javascript로 그 부분을 변형시키는것이 가능해 집니다.
+         > inline : 한 칸 아래로 내려가지 않음
+
+<div> : (분할, 나누기)태그로 알려져있으며 html에서 웹 페이지의 내용 
+        (텍스트, 이미지, 머리글 등)을 구분하는데 사용됩니다. 자체마진 보유 x
+
+
+list - ol>li*3 + tab키 
+ > ol : 숫자
+ > ul : dot 형식
+ > li : ol,ul 안에서 사용
+
+ input : 사용자로부터 입력받음
+ label : 어떤 정보를 입력받는가? 를 보기쉽게 보임 (ex : Name )
+  >> 둘 다 inline

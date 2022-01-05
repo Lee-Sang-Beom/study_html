@@ -1,0 +1,57 @@
+* {
+    color : green;
+}
+
+li {
+    color : blue;
+}
+
+#special{
+    color : red;
+}
+
+li#special{
+    color : green;
+}
+
+.red{
+    width : 80px;
+    height : 20px;
+    background-color : pink;
+}
+
+button:hover{
+    color : white;
+    background-color: black;
+}
+
+a[href]
+{
+    color : purple;
+}
+
+a[href = "https://bns.plaync.com/"]
+{
+    color : bisque;
+}
+
+a[href^="google"] 
+{
+    color : black;
+}
+
+a[href$="com"]
+{
+    background-color : yellowgreen;
+}
+
+.div1{
+    width : 100px;
+    height : 100px;
+    background-color: chartreuse;
+    padding : 30px 20px 60px 50px; 
+    border : 4px solid red;
+    margin : 30px;
+
+
+}
